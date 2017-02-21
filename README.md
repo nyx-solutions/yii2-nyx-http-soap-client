@@ -36,9 +36,9 @@ to the `require` section of your application's `composer.json` file.
 ```php
 'components' => [
     'soapApi' => [
-        'class'   => 'nox\http\soap\HttpSoapClient',
-        'url'     => 'http://ws.exemple.com/WebService.asmx?wsdl',
-        'options' => [
+        'class'    => 'nox\http\soap\HttpSoapClient',
+        'endpoint' => 'http://ws.exemple.com/WebService.asmx?wsdl',
+        'options'  => [
             'cache_wsdl' => WSDL_CACHE_NONE,
         ]
     ],
@@ -50,7 +50,7 @@ Or you can define the `HttpSoapClient` directly in your code:
 ```php
 use nox\http\soap\HttpSoapClient;
 
-$client = new HttpSoapClient(['url' => 'http://ws.exemple.com/WebService.asmx?wsdl']);
+$client = new HttpSoapClient(['endpoint' => 'http://ws.exemple.com/WebService.asmx?wsdl']);
 ```
 
 After the configuration step is compleate, you can call the SOAP methods as follow (where `getMessage` is your SOAP method):
