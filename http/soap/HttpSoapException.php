@@ -3,17 +3,17 @@
     namespace nox\soap;
 
     /**
-     * Class SoapException
+     * Class HttpSoapException
      *
      * @package nox\soap
      */
-    class SoapException extends \Exception
+    class HttpSoapException extends \Exception
     {
         /**
          * @return string
          */
         public function getName()
         {
-            return 'SOAP Client Exception.';
+            return 'HttpSoapClient Exception.';
         }
     }
