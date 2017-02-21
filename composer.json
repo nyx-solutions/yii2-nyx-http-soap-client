@@ -1,0 +1,40 @@
+{
+  "name": "nox-it/yii2-soap-client",
+  "description": "Yii2 SOAP Client",
+  "type": "library",
+  "keywords": [
+    "yii2",
+    "extension",
+    "migration",
+    "framework",
+    "php"
+  ],
+  "license": "BSD-3-Clause",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Jonatas Sas",
+      "email": "atendimento@jsas.com.br"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "nox-it/yii2-nox": "1.*",
+    "nox-it/yii2-nox-helpers": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "nox\\http\\soap\\": "http/soap"
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nox-it/yii2-nox-soap-client"
+    }
+  ]
+}
