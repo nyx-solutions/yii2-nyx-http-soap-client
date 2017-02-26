@@ -1,6 +1,6 @@
 <?php
 
-    namespace nox\soap;
+    namespace nox\http\soap;
 
     /**
      * Class HttpSoapException

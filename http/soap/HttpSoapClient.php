@@ -1,6 +1,6 @@
 <?php
 
-    namespace nox\soap;
+    namespace nox\http\soap;
 
     use yii\base\Component;
     use yii\base\InvalidConfigException;
