@@ -1,6 +1,6 @@
 {
-  "name": "nox-it/yii2-soap-client",
-  "description": "Yii2 SOAP Client",
+  "name": "nox-it/yii2-http-soap-client",
+  "description": "Yii2 HTTP SOAP Client",
   "type": "library",
   "keywords": [
     "yii2",
@@ -10,7 +10,7 @@
     "php"
   ],
   "license": "BSD-3-Clause",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
     {
       "name": "Jonatas Sas",
@@ -34,7 +34,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/nox-it/yii2-nox-soap-client"
+      "url": "https://github.com/nox-it/yii2-nox-http-soap-client"
     }
   ]
 }
