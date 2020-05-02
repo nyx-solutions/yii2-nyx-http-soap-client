@@ -2,6 +2,10 @@
 
     namespace nox\http\soap;
 
+    use Exception;
+    use nox\http\soap\exceptions\HttpSoapException;
+    use SoapClient;
+    use SoapFault;
     use yii\base\Component;
     use yii\base\InvalidConfigException;
 
@@ -15,20 +19,22 @@
         /**
          * @var string
          */
-        public $endpoint;
+        public string $endpoint = '';
 
         /**
          * @var array the array of SOAP client options.
          */
-        public $options = [];
+        public array $options = [];
 
         /**
-         * @var \SoapClient the SOAP client instance.
+         * @var SoapClient the SOAP client instance.
          */
-        private $_soapClient;
+        private ?SoapClient $_soapClient = null;
 
         /**
          * @inheritdoc
+         *
+         * @throws InvalidConfigException|HttpSoapException
          */
         public function init()
         {
@@ -39,8 +45,8 @@
             }
 
             try {
-                $this->_soapClient = new \SoapClient($this->endpoint, $this->options);
-            } catch (\SoapFault $exception) {
+                $this->_soapClient = new SoapClient($this->endpoint, $this->options);
+            } catch (SoapFault $exception) {
                 throw new HttpSoapException($exception->getMessage(), (int)$exception->getCode(), $exception);
             }
         }
@@ -51,13 +57,14 @@
          *
          * @return mixed
          *
-         * @throws \Exception
+         * @throws Exception
+         * @noinspection PhpRedundantCatchClauseInspection
          */
         public function __call($name, $arguments)
         {
             try {
                 return call_user_func_array([$this->_soapClient, $name], $arguments);
-            } catch (\SoapFault $exception) {
+            } catch (SoapFault $exception) {
                 throw new HttpSoapException($exception->getMessage(), (int)$exception->getCode(), $exception);
             }
         }
