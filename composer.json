@@ -26,6 +26,9 @@
   "config": {
     "process-timeout": 1800
   },
+  "replace": {
+    "mongosoft/yii2-soap-client": "*"
+  },
   "repositories": [
     {
       "type": "composer",
