@@ -1,9 +1,9 @@
 <?php
 
-    namespace nox\http\soap;
+    namespace nyx\http\soap;
 
     use Exception;
-    use nox\http\soap\exceptions\HttpSoapException;
+    use nyx\http\soap\exceptions\HttpSoapException;
     use SoapClient;
     use SoapFault;
     use yii\base\Component;
@@ -12,7 +12,7 @@
     /**
      * Class HttpSoapClient
      *
-     * @package nox\soap
+     * @package nyx\soap
      */
     class HttpSoapClient extends Component
     {

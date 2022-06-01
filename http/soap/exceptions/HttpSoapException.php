@@ -1,13 +1,13 @@
 <?php
 
-    namespace nox\http\soap\exceptions;
+    namespace nyx\http\soap\exceptions;
 
     use Exception;
 
     /**
      * Class HttpSoapException
      *
-     * @package nox\soap
+     * @package nyx\soap
      */
     class HttpSoapException extends Exception
     {
