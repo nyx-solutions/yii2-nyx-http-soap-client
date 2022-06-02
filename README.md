@@ -1,15 +1,15 @@
-Yii PHP Framework Version 2 / NOX HttpSoapClient
+Yii PHP Framework Version 2 / NYX HttpSoapClient
 ================================================
 
 Yii2 component for SOAP requests.
 
-[![Latest Stable Version](https://poser.pugx.org/nyx-solutions/yii2-soap-client/v/stable)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
-[![Total Downloads](https://poser.pugx.org/nyx-solutions/yii2-soap-client/downloads)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
-[![Latest Unstable Version](https://poser.pugx.org/nyx-solutions/yii2-soap-client/v/unstable)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
-[![License](https://poser.pugx.org/nyx-solutions/yii2-soap-client/license)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
-[![Monthly Downloads](https://poser.pugx.org/nyx-solutions/yii2-soap-client/d/monthly)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
-[![Daily Downloads](https://poser.pugx.org/nyx-solutions/yii2-soap-client/d/daily)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
-[![composer.lock](https://poser.pugx.org/nyx-solutions/yii2-soap-client/composerlock)](https://packagist.org/packages/nyx-solutions/yii2-soap-client)
+[![Latest Stable Version](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/v/stable)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
+[![Total Downloads](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/downloads)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
+[![Latest Unstable Version](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/v/unstable)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
+[![License](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/license)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
+[![Monthly Downloads](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/d/monthly)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
+[![Daily Downloads](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/d/daily)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
+[![composer.lock](https://poser.pugx.org/nyx-solutions/yii2-http-soap-client/composerlock)](https://packagist.org/packages/nyx-solutions/yii2-http-soap-client)
 
 ## Installation
 
@@ -18,13 +18,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 * Either run
 
 ```bash
-php composer.phar require --prefer-dist "nyx-solutions/yii2-soap-client" "*"
+php composer.phar require --prefer-dist "nyx-solutions/yii2-http-soap-client" "*"
 ```
 
 or add
 
 ```json
-"nyx-solutions/yii2-soap-client": "*"
+"nyx-solutions/yii2-http-soap-client": "*"
 ```
 
 to the `require` section of your application's `composer.json` file.
@@ -61,7 +61,7 @@ echo $client->getMessage('Lorem ipsum...');
 
 ## License
 
-**yii2-soap-client** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**yii2-http-soap-client** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
 
 ![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)
 
